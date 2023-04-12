@@ -7,4 +7,6 @@ const p = new Promise((resolve, reject) => {
 let p2 = p.then().then().then()
 p2.then(data => {
   console.log('data', data)
+}).catch(err => {
+  console.log(err)
 })
